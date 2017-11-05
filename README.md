@@ -77,4 +77,11 @@ ExcelDna-master\ExcelDna-master\Distribution\Samples\ComServer
 
 ### 1. Define What's Com Visible :
 
+*In AutoDual, we do not need to declare an interface ICOMFooBar to define what will be explicitely COM Visible. 
+However, default methods such as : 
+**Equals(), GetHashCode(), GetType(), ToString()** 
+will appeared as COM Visible and available for use in EXCEL VBA.*
+
 ![alt capture6](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot6.JPG)
+
+![alt capture7](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot7.JPG)
