@@ -1,0 +1,11 @@
+https://github.com/KevinT/ExcelDna/blob/master/Source/ExcelDnaPack/PackProgram.cs
+
+
+http://mikejuniperhill.blogspot.fr/2014/03/interfacing-c-and-vba-with-exceldna_16.html
+http://mikejuniperhill.blogspot.fr/2014/03/interfacing-c-and-vba-with-exceldna-no.html
+
+https://msdn.microsoft.com/nl-be/library/42x5kfw4.aspx
+
+https://ichihedge.wordpress.com/2016/12/01/excel-dna-enable-configuration/
+
+http://exceldna.codeplex.com/wikipage?title=Excel-DNA%20Packing%20Tool&referringTitle=Documentation

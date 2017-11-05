@@ -1,0 +1,6 @@
+<DnaLibrary Name="DataApiXLAddin" RuntimeVersion="v4.0">
+  <ExternalLibrary Path="DataApi.XLAddin.dll" Pack="true" ComServer="true" />
+  <Reference Path="log4net.dll" LoadFromBytes="true" Pack="true" />
+  <Reference Path="DataApi.Core.dll" LoadFromBytes="true" Pack="true" />
+  <Reference Path="DataApi.Model.dll" LoadFromBytes="true" Pack="true" />
+</DnaLibrary>
