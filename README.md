@@ -25,6 +25,8 @@ Or, Open Excel, Tools > References > Browse in order to add the generated **lib\
 
 ![alt capture4](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot4.JPG)
 
+![alt capture5](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot5.JPG)
+
 *In a classical COM registration process, user will need to add tlb as VBA References, then regsvr32 these tlb. 
 The drawback of this method is that it will register in the personal local registry.*
 
