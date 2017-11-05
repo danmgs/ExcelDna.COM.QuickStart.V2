@@ -4,7 +4,7 @@ EXCEL DNA COM Sample : Generation of an XLL file to be used in VBA.
 This is a v2 version (more detailled version) of This site was built using [ExcelDna.COM.QuickStart](https://github.com/danmgs/ExcelDna.COM.QuickStart).
 
 
-![alt capture1](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/public/img/screenshot1.JPG)
+![alt capture1](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot1.JPG)
 
 
 1. Generation of the XLL
