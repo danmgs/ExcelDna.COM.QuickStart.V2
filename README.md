@@ -7,7 +7,9 @@ This is a v2 version (more detailled version) of This site was built using [Exce
 ![alt capture1](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot1.JPG)
 
 
-### 1. Generation of the XLL
+## GUIDELINES
+
+#### 1. Generation of the XLL
 - Check Post Build event of project **"DataApi.XLAddin"**, this will:
 - Generate tlb files
 - Build a **DataApi.XLAddin-packed.xll**.
@@ -16,7 +18,7 @@ This is a v2 version (more detailled version) of This site was built using [Exce
 
 ![alt capture2](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot2.JPG)
 
-### 2. Referencing the DataApi.XLAddin.xll.
+#### 2. Referencing the DataApi.XLAddin.xll.
 - Open Excel
 - Load the **DataApi.XLAddin.xll**. 
 Or, Open Excel, Tools > References > Browse in order to add the generated **lib\DataApi.XLAddin.xll**
@@ -44,18 +46,20 @@ Auto-registration routine is implemented in class:
 ExcelAddin.cs
 ```
 
-### 3. Testing with the sample XL for demo
+#### 3. Testing with the sample XL for demo
+
 - Open Sample **"Sheet_Testing_XLL.xlsm"** and browse for the xll as shown in step **2.**
 - Input order parameters and click to book the order. 
 
-### 4. Logging has been implemented with log4net, to allow it:
+#### 4. Logging has been implemented with log4net, to allow it:
+
 - **log4net.dll** is packed in .dna config 
  
 ```
 <Reference Path="log4net.dll" LoadFromBytes="true" Pack="true" />
 ```
 
--  loaded via DataApi.XLAddin / AssemblyInfo.cs file:
+-  loaded via DataApi.XLAddin > AssemblyInfo.cs file:
 ```
 [assembly: log4net.Config.XmlConfigurator]
 ```
@@ -67,15 +71,15 @@ ExcelAddin.cs
 C:\log 
 ```
 
-### 5. Additionnal: Check sample codes for details https://github.com/Excel-DNA/ExcelDna
+#### 5. Additionnal: Check sample codes for details https://github.com/Excel-DNA/ExcelDna
 ```
 ExcelDna-master\ExcelDna-master\Distribution\Samples\ComServer 
 ```
 
-# Additionnal Notes
+## Additionnal Notes
 
 
-### 1. Define What's Com Visible :
+#### 1. Define What's Com Visible :
 
 *In AutoDual, we do not need to declare an interface ICOMFooBar to define what will be explicitely COM Visible. 
 However, default methods such as : 
