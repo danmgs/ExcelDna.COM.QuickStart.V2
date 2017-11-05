@@ -55,6 +55,7 @@
     <Compile Include="COM\Classes\Interfaces\ICOMDataManager.cs" />
     <Compile Include="COM\Classes\Interfaces\ICOMOrderBookingManager.cs" />
     <Compile Include="COM\Mapper\TradeMapper.cs" />
+    <Compile Include="COM\Model\COMFooBar.cs" />
     <Compile Include="COM\Model\COMTrade.cs" />
     <Compile Include="COM\Model\COMUnderlying.cs" />
     <Compile Include="COM\Model\COMUnderlyingInfos.cs" />

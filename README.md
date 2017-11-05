@@ -71,3 +71,10 @@ C:\log
 ```
 ExcelDna-master\ExcelDna-master\Distribution\Samples\ComServer 
 ```
+
+# Additionnal Notes
+
+
+### 1. Define What's Com Visible :
+
+![alt capture6](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot6.JPG)
