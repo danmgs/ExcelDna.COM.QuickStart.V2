@@ -1,15 +1,16 @@
 # ExcelDna.COM.QuickStart.V2
 
-EXCEL DNA COM Sample : Generation of an XLL file to be used in VBA. 
-This is a v2 version (more detailled version) of This site was built using [ExcelDna.COM.QuickStart](https://github.com/danmgs/ExcelDna.COM.QuickStart).
+EXCEL DNA COM Sample : Generation of an XLL file to be used in VBA.  
+This is a v2 version (more detailled) of project [ExcelDna.COM.QuickStart](https://github.com/danmgs/ExcelDna.COM.QuickStart).
 
 
 ![alt capture1](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot1.JPG)
 
 
-## GUIDELINES
+# STEPS TO FOLLOW
 
 #### 1. Generation of the XLL
+
 - Check Post Build event of project **"DataApi.XLAddin"**, this will:
 - Generate tlb files
 - Build a **DataApi.XLAddin-packed.xll**.
@@ -19,8 +20,9 @@ This is a v2 version (more detailled version) of This site was built using [Exce
 ![alt capture2](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot2.JPG)
 
 #### 2. Referencing the DataApi.XLAddin.xll.
+
 - Open Excel
-- Load the **DataApi.XLAddin.xll**. 
+- Load the **DataApi.XLAddin.xll**.   
 Or, Open Excel, Tools > References > Browse in order to add the generated **lib\DataApi.XLAddin.xll**
 
 ![alt capture3](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot3.JPG)
@@ -29,11 +31,11 @@ Or, Open Excel, Tools > References > Browse in order to add the generated **lib\
 
 ![alt capture5](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot5.JPG)
 
-*In a classical COM registration process, user will need to add tlb as VBA References, then regsvr32 these tlb. 
+*In a classical COM registration process, user will need to add tlb as VBA References, then regsvr32 these tlb.  
 The drawback of this method is that it will register in the personal local registry.*
 
-*With EXCEL DNA, we do not need to reference the tlb anymore but the .xll:
-**DataApi.XLAddin.xll** contains all the plumbing in the .dna file.
+*With EXCEL DNA, we do not need to reference the tlb anymore but the .xll:  
+**DataApi.XLAddin.xll** contains all the plumbing in the .dna file.  
 At each use, the xll will register in a personal "on-the-fly" EXCEL DNA virtual env.*
 
 What dll is COMVisible:
@@ -76,15 +78,16 @@ C:\log
 ExcelDna-master\ExcelDna-master\Distribution\Samples\ComServer 
 ```
 
-## Additionnal Notes
+# ADDITIONNAL NOTES
 
 
-#### 1. Define What's Com Visible :
+#### 1. Define what's Com visible or not :
 
-*In AutoDual, we do not need to declare an interface ICOMFooBar to define what will be explicitely COM Visible. 
-However, default methods such as : 
-**Equals(), GetHashCode(), GetType(), ToString()** 
-will appeared as COM Visible and available for use in EXCEL VBA.*
+*In "AutoDual" mode, we do not need to declare an interface ICOMFooBar to define what will be explicitely COM Visible.  
+However, default methods such as :  
+**Equals(), GetHashCode(), GetType(), ToString()** will appeared as COM Visible and available for use in EXCEL VBA.*  
+
+A sample class has been written **"COMFooBar.cs"** for demo purpose:
 
 ![alt capture6](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot6.JPG)
 
