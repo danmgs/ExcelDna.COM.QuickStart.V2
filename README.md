@@ -14,10 +14,16 @@ This is a v2 version (more detailled version) of This site was built using [Exce
 - Copy **DataApi.XLAddin-packed.xll** to **lib\DataApi.XLAddin.xll** (renaming)
 - Copy **DataApi.XLAddin.xll.config** to **lib\DataApi.XLAddin.xll.config**
 
+![alt capture2](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot2.JPG)
+
 ### 2. Referencing the DataApi.XLAddin.xll.
 - Open Excel
 - Load the **DataApi.XLAddin.xll**. 
-Or, Open Excel, Tools > References > Browse in order to add DataApi.XLAddin.xll
+Or, Open Excel, Tools > References > Browse in order to add the generated **lib\DataApi.XLAddin.xll**
+
+![alt capture3](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot3.JPG)
+
+![alt capture4](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot4.JPG)
 
 *In a classical COM registration process, user will need to add tlb as VBA References, then regsvr32 these tlb. 
 The drawback of this method is that it will register in the personal local registry.*
@@ -35,7 +41,6 @@ Auto-registration routine is implemented in class:
 ```
 ExcelAddin.cs
 ```
-
 
 ### 3. Testing with the sample XL for demo
 - Open Sample **"Sheet_Testing_XLL.xlsm"** and browse for the xll as shown in step **2.**
