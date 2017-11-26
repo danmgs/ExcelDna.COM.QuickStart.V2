@@ -16,7 +16,7 @@ namespace DataApi.Model
 
         public List<Underlying> Underlyings { get; set; }
 
-        public object[] AdditionnalInfos { get; set; }
+        public string[] AdditionnalInfos { get; set; }
 
         public override string ToString()
         {

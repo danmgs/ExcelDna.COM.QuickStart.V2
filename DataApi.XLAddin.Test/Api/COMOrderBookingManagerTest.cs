@@ -3,7 +3,7 @@ using DataApi.XLAddin.COM.Model;
 using DataApi.XLAddin.COM.Model.Enums;
 using NUnit.Framework;
 
-namespace DataApi.XLAddin.Test
+namespace DataApi.XLAddin.Test.Api
 {
     [TestFixture]
     public class COMOrderBookingManagerTest
@@ -21,7 +21,6 @@ namespace DataApi.XLAddin.Test
         {
             _comOrderBookingManager = null;
         }
-
 
         [TestCase("OPERATOR", 10.2, 100)]
         public void Send(string operatorName, double price, int quantity)
@@ -48,13 +47,16 @@ namespace DataApi.XLAddin.Test
                 OperatorName = operatorName,
                 Price = price,
                 Quantity = quantity,
-                UnderlyingInfos = underlyingInfos,
-                AdditionnalInfos = new string[2] { "Foo", "Bar" }
+                UnderlyingInfos = underlyingInfos
             };
+
+            comTrade.SetAdditionnalInfos(new string[2] { "Foo", "Bar" });
 
             var actual = _comOrderBookingManager.Send(comTrade);
             Assert.IsInstanceOf(typeof(string), actual);
             Assert.IsNotNull(actual);
+            Assert.IsTrue(actual.Contains("Foo"));
+            Assert.IsTrue(actual.Contains("Bar"));
 
             System.Diagnostics.Debug.Print(actual);
         }

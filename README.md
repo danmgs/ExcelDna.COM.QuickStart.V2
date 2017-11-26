@@ -1,7 +1,7 @@
 # ExcelDna.COM.QuickStart.V2
 
 EXCEL DNA COM Sample : Generation of an XLL file to be used in VBA.  
-This is a v2 version (more detailled) of project [ExcelDna.COM.QuickStart](https://github.com/danmgs/ExcelDna.COM.QuickStart).
+This is a v2 version, more detailed, of project [ExcelDna.COM.QuickStart](https://github.com/danmgs/ExcelDna.COM.QuickStart).
 
 
 ![alt capture1](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot1.JPG)
@@ -81,7 +81,7 @@ ExcelDna-master\ExcelDna-master\Distribution\Samples\ComServer
 # ADDITIONNAL NOTES
 
 
-#### 1. Define what's Com visible or not :
+#### 1. Define what's COM visible or not :
 
 *In "AutoDual" mode, we do not need to declare an interface ICOMFooBar to define what will be explicitely COM Visible.  
 However, default methods such as :  
@@ -92,3 +92,21 @@ A sample class has been written **"COMFooBar.cs"** for demo purpose:
 ![alt capture6](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot6.JPG)
 
 ![alt capture7](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot7.JPG)
+
+#### 2. HOW TO : Pass a string array from VBA to COM C# : use of LoadComObjectIntoTArray
+   
+In order to set the **string[] AdditionnalInfos** property of **Trade** class, please check the demonstration in **COMTrade** class :
+
+```
+public void SetAdditionnalInfos(object addInfosStringArray)    
+```
+ 
+Call in VBA
+
+```
+Dim additionnalInfosArr(3) As String
+...
+comTrade.SetAdditionnalInfos (additionnalInfosArr)
+```
+
+Help and details [here](https://www.codeproject.com/Articles/12386/Sending-an-array-of-doubles-from-Excel-VBA-to-C-us).

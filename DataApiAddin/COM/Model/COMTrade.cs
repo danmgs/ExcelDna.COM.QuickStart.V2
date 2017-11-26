@@ -62,10 +62,15 @@ namespace DataApi.XLAddin.COM.Model
             }
         }
 
-        public object[] AdditionnalInfos
+        // HOW TO : Expose a string[] via use of LoadComObjectIntoTArray.
+        public void SetAdditionnalInfos(object addInfosStringArray)
         {
-            get { return Trade.AdditionnalInfos; }
-            set { Trade.AdditionnalInfos = value; }
+            Trade.AdditionnalInfos = Utils<string>.LoadComObjectIntoTArray(addInfosStringArray);
+        }
+
+        public object GetAdditionnalInfos()
+        {
+            return Trade.AdditionnalInfos;
         }
 
         private List<Underlying> GenerateUnderlyingInfos(COMUnderlyingInfos comUnderlyingInfos)

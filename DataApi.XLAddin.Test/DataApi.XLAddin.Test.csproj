@@ -46,8 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="COMOrderBookingManagerTest.cs" />
-    <Compile Include="COMDataManagerTest.cs" />
+    <Compile Include="Api\COMOrderBookingManagerTest.cs" />
+    <Compile Include="Api\COMDataManagerTest.cs" />
+    <Compile Include="Model\COMTradeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

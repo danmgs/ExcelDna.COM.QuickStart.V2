@@ -64,6 +64,7 @@
     <Compile Include="COM\Model\Interfaces\ICOMUnderlying.cs" />
     <Compile Include="COM\Model\Interfaces\ICOMUnderlyingInfos.cs" />
     <Compile Include="COM\Model\Interfaces\ICOMTrade.cs" />
+    <Compile Include="COM\Model\Utils.cs" />
     <Compile Include="ExcelAddin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

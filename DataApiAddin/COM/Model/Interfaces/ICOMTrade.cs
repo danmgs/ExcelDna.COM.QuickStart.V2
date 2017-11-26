@@ -15,6 +15,8 @@ namespace DataApi.XLAddin.COM.Model.Interfaces
 
         COMUnderlyingInfos UnderlyingInfos { get; set; }
 
-        object[] AdditionnalInfos { get; set; }
+        void SetAdditionnalInfos(object addInfosStringArray);
+
+        object GetAdditionnalInfos();
     }
 }

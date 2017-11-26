@@ -3,7 +3,7 @@ using DataApi.XLAddin.COM.Model;
 using DataApi.XLAddin.COM.Model.Enums;
 using NUnit.Framework;
 
-namespace DataApi.XLAddin.Test
+namespace DataApi.XLAddin.Test.Api
 {
     [TestFixture]
     public class COMDataManagerTest
