@@ -6,6 +6,20 @@ This is a v2 version, more detailed, of project [ExcelDna.COM.QuickStart](https:
 
 ![alt capture1](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot1.JPG)
 
+# INTRO
+
+You should know that Excel DNA allows to expose UDF functions under Excel Sheets. 
+- as formula in cell
+- directly via VBA Code with :
+
+```
+Application.Run("[my function name here]")
+```
+
+To do so, these functions are implemented in C# as **public static** in static class. 
+
+Yet besides to this, and more powerful: we will demonstrate any C# functions could be COM exposed.
+The Goal of the produced XLL is to expose, via COM technology, C# functions which can be used under VBA Excel code.
 
 # STEPS TO FOLLOW
 
@@ -18,6 +32,8 @@ This is a v2 version, more detailed, of project [ExcelDna.COM.QuickStart](https:
 - Copy **DataApi.XLAddin.xll.config** to **lib\DataApi.XLAddin.xll.config**
 
 ![alt capture2](https://github.com/danmgs/ExcelDna.COM.QuickStart.V2/blob/master/img/screenshot2.JPG)
+
+tlb files will allow any C# functions to be COM exposed.
 
 #### 2. Referencing the DataApi.XLAddin.xll.
 
